@@ -1,11 +1,29 @@
-﻿// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-// 5 -> 2, 4
-// 8 -> 2, 4, 6, 8
+﻿// // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// // 5 -> 2, 4
+// // 8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-int b = 2;
-if (a > 1)
-while (b <= a)
-Console.WriteLine(b + ",");
-b++;
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int evenNumber  = 2;
+// if (number>1)
+// {
+//     while (evenNumber  <= number)
+//     {
+//         Console.WriteLine(evenNumber  + " ");
+//         evenNumber  += 2;
+//     }
+// }
+
+using System.Reflection.Emit;
+
+System.Console.WriteLine("Enter number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int evenNumber = 2;
+if (number > 1)
+{
+    while(evenNumber<=number)
+    {
+        Console.Write(evenNumber + "");
+        evenNumber = evenNumber +2;
+    }
+}
